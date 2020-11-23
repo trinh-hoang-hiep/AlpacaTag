@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/hoang/anaconda3/envs/alpaca/bin/alpaca-serving-start", line 5, in <module>
+    from alpaca_serving.server import main
+  File "/home/hoang/Desktop/AlpacaTag/alpaca_server/alpaca_serving/__init__.py", line 20, in <module>
+    from alpaca_model.pytorchAPI import SequenceTaggingModel
+  File "/home/hoang/Desktop/AlpacaTag/alpaca_server/alpaca_model/pytorchAPI/__init__.py", line 1, in <module>
+    from .wrapper import SequenceTaggingModel
+  File "/home/hoang/Desktop/AlpacaTag/alpaca_server/alpaca_model/pytorchAPI/wrapper.py", line 1, in <module>
+    from .active_learning import *
+  File "/home/hoang/Desktop/AlpacaTag/alpaca_server/alpaca_model/pytorchAPI/active_learning/__init__.py", line 1, in <module>
+    from .acquisition import Acquisition
+  File "/home/hoang/Desktop/AlpacaTag/alpaca_server/alpaca_model/pytorchAPI/active_learning/acquisition.py", line 8, in <module>
+    from ..utils import *
+  File "/home/hoang/Desktop/AlpacaTag/alpaca_server/alpaca_model/pytorchAPI/utils.py", line 18, in <module>
+    import flair
+  File "/home/hoang/anaconda3/envs/alpaca/lib/python3.6/site-packages/flair/__init__.py", line 9, in <module>
+    if torch.cuda.is_available():
+  File "/home/hoang/.local/lib/python3.6/site-packages/torch/cuda/__init__.py", line 50, in is_available
+    not torch._C._cuda_isDriverSufficient()):
+KeyboardInterrupt
